@@ -9,6 +9,7 @@ import Footer from '../../components/Footer/';
 import Dashboard from '../../views/Dashboard/';
 import Charts from '../../views/Charts/';
 import Widgets from '../../views/Widgets/';
+import Tabcontainer from '../../views/Tabcontainer/';
 
 // Components
 import Buttons from '../../views/Components/Buttons/';
@@ -48,14 +49,13 @@ class Full extends Component {
   render() {
     return (
       <div className="app">
-        <Header />
-        <div className="app-body">
-          <Sidebar {...this.props}/>
-          <main className="main">
-            <Breadcrumb />
+        <div className="app-body" style={{marginTop:'0px'}}>
+          <main className="" style={{width:'100%'}}>
+            <Breadcrumb style={{padding:'10px'}} />
             <Container fluid>
               <Switch>
-                <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
+                <Route path="/dashboard" name="Tabcontainer" component={Tabcontainer}/>
+                {/* <Route path="/dashboard" name="Dashboard" component={Dashboard}/> */}
                 <Route path="/components/buttons" name="Buttons" component={Buttons}/>
                 <Route path="/components/cards" name="Cards" component={Cards}/>
                 <Route path="/components/modals" name="Modals" component={Modals}/>
@@ -83,9 +83,8 @@ class Full extends Component {
               </Switch>
             </Container>
           </main>
-          <Aside />
         </div>
-        <Footer />
+        <Footer/>
       </div>
     );
   }

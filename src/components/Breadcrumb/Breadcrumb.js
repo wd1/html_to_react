@@ -22,17 +22,11 @@ const BreadcrumbsItem = ({...rest, match}) => {
   const routeName = findRouteName(match.url);
   if (routeName) {
     return (
-      match.isExact ?
-        (
-          <BreadcrumbItem active>{routeName}</BreadcrumbItem>
-        ) :
-        (
-          <BreadcrumbItem>
-            <Link to={match.url || ''}>
-              {routeName}
-            </Link>
-          </BreadcrumbItem>
-        )
+
+      <BreadcrumbItem>
+        <img src="../img/lens-selector-logo.png" style={{height:'50px'}}/>
+      </BreadcrumbItem>
+
     );
   }
   return null;
