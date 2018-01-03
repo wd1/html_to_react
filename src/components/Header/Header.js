@@ -37,37 +37,13 @@ class Header extends Component {
 
   render() {
     return (
-      <header className="app-header navbar">
-        <NavbarToggler className="d-lg-none" onClick={this.mobileSidebarToggle}>
-          <span className="navbar-toggler-icon"></span>
-        </NavbarToggler>
-        <NavbarBrand href="#"></NavbarBrand>
-        <NavbarToggler className="d-md-down-none" onClick={this.sidebarToggle}>
-          <span className="navbar-toggler-icon"></span>
-        </NavbarToggler>
-        <Nav className="d-md-down-none" navbar>
-          <NavItem className="px-3">
-            <NavLink href="#">Dashboard</NavLink>
-          </NavItem>
-          <NavItem className="px-3">
-            <NavLink href="#">Users</NavLink>
-          </NavItem>
-          <NavItem className="px-3">
-            <NavLink href="#">Settings</NavLink>
-          </NavItem>
+      <header className="app-header navbar" style={{position:'relative !important', background:'white', border:'none'}}>
+        <NavbarBrand style={{display:'flex',background:'none',border:'none',left:'0',marginLeft:'0'}} href="#">
+          <img src="../img/lens-selector-logo.png" style={{height:'30px',alignSelf: 'center'}}/>
+        </NavbarBrand>
+        <Nav className="ml-auto" style={{padding:'0 1.75rem'}} navbar>
+          <HeaderDropdown tasks />
         </Nav>
-        <Nav className="ml-auto" navbar>
-          <HeaderDropdown notif/>
-          <HeaderDropdown tasks/>
-          <HeaderDropdown mssgs/>
-          <NavItem className="d-md-down-none">
-            <NavLink href="#"><i className="icon-location-pin"></i></NavLink>
-          </NavItem>
-          <HeaderDropdown accnt/>
-        </Nav>
-        <NavbarToggler className="d-md-down-none" onClick={this.asideToggle}>
-          <span className="navbar-toggler-icon"></span>
-        </NavbarToggler>
       </header>
     );
   }

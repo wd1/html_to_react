@@ -106,7 +106,7 @@ class HeaderDropdown extends Component {
   }
 
   dropTasks() {
-    const itemsCount = 15;
+    const itemsCount = 5;
     return (
       <NavDropdown className="d-md-down-none" isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle nav>
@@ -115,30 +115,33 @@ class HeaderDropdown extends Component {
         <DropdownMenu right className="dropdown-menu-lg">
           <DropdownItem header tag="div" className="text-center"><strong>You have {itemsCount} pending tasks</strong></DropdownItem>
           <DropdownItem>
-            <div className="small mb-1">Upgrade NPM &amp; Bower <span
+            <div className="small mb-1">Category 1 Tasks <span
               className="float-right"><strong>0%</strong></span></div>
             <Progress className="progress-xs" color="info" value={0}/>
           </DropdownItem>
           <DropdownItem>
-            <div className="small mb-1">ReactJS Version <span className="float-right"><strong>25%</strong></span>
+            <div className="small mb-1">Category 2 Tasks <span className="float-right"><strong>25%</strong></span>
             </div>
             <Progress className="progress-xs" color="danger" value={25}/>
           </DropdownItem>
           <DropdownItem>
-            <div className="small mb-1">VueJS Version <span className="float-right"><strong>50%</strong></span>
+            <div className="small mb-1">Category 3 Tasks <span className="float-right"><strong>50%</strong></span>
             </div>
             <Progress className="progress-xs" color="warning" value={50}/>
           </DropdownItem>
           <DropdownItem>
-            <div className="small mb-1">Add new layouts <span className="float-right"><strong>75%</strong></span>
+            <div className="small mb-1">Category 4 Tasks <span className="float-right"><strong>75%</strong></span>
             </div>
             <Progress className="progress-xs" color="info" value={75}/>
           </DropdownItem>
           <DropdownItem>
-            <div className="small mb-1">Angular 2 Cli Version <span className="float-right"><strong>100%</strong></span></div>
+            <div className="small mb-1">Select Lens Options <span className="float-right"><strong>100%</strong></span></div>
             <Progress className="progress-xs" color="success" value={100}/>
           </DropdownItem>
-          <DropdownItem className="text-center"><strong>View all tasks</strong></DropdownItem>
+          <DropdownItem>
+            <div className="small mb-1">Rx & Measurements <span className="float-right"><strong>100%</strong></span></div>
+            <Progress className="progress-xs" color="success" value={100}/>
+          </DropdownItem>
         </DropdownMenu>
       </NavDropdown>
     );

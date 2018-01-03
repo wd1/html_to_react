@@ -24,7 +24,7 @@ const BreadcrumbsItem = ({...rest, match}) => {
     return (
 
       <BreadcrumbItem>
-        <img src="../img/lens-selector-logo.png" style={{height:'50px'}}/>
+        <img src="../img/lens-selector-logo.png" style={{height:'30px'}}/>
       </BreadcrumbItem>
 
     );

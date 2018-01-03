@@ -43,6 +43,7 @@
     "react-dom": "16.1.0",
     "react-frame-component": "^2.0.0",
     "react-ladda": "5.0.7",
+    "react-modal-video": "^1.0.7",
     "react-quill": "1.1.0",
     "react-router-dom": "4.2.2",
     "react-select": "1.0.0-rc.10",

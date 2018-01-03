@@ -51,7 +51,8 @@ class Full extends Component {
       <div className="app">
         <div className="app-body" style={{marginTop:'0px'}}>
           <main className="" style={{width:'100%'}}>
-            <Breadcrumb style={{padding:'10px'}} />
+            {/* <Breadcrumb style={{padding:'10px'}} /> */}
+            <Header style={{position:'relative'}}/>
             <Container fluid>
               <Switch>
                 <Route path="/dashboard" name="Tabcontainer" component={Tabcontainer}/>

@@ -52,7 +52,6 @@ app-root {
 //
 .header-fixed {
   .app-header {
-    position: fixed;
     z-index: $zindex-sticky;
     width: 100%;
   }
@@ -304,7 +303,6 @@ app-root {
 
 @include media-breakpoint-down(md) {
   .app-header.navbar {
-    position: fixed !important;
     z-index: $zindex-sticky;
     width: 100%;
     text-align: center;
